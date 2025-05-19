@@ -1,11 +1,15 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function SecondsCounter ({seconds}){
-    const cronoaspect = String(seconds).padStart(6, '0').split('').join(' ');
+    const digits = String(seconds).padStart(6,"0").split("").join(' ');
     return(
         <div className="counter">
-        <i className="fa fa-clock"></i>
-        <span>{cronoaspect}</span>
+        
+        <span>
+            <i className="fa fa-clock"></i>
+            {digits}
+            
+        </span>
         </div>
     )
 }

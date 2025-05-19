@@ -17,10 +17,10 @@ import '../styles/index.css'
 import SecondsCounter from './components/SecondsCounter';
 let SecondsElapsed = 0;
 
-function updatecounter(){
+function updateCounter(){
   const root = ReactDOM.createRoot(document.getElementById('root'))
   root.render(<SecondsCounter seconds={SecondsElapsed} />);
   SecondsElapsed++;
 }
 
-setInterval(updatecounter, 1000);
+setInterval(updateCounter, 1000);
