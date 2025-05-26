@@ -15,6 +15,7 @@ import '../styles/index.css'
  */
 
 import SecondsCounter from './components/SecondsCounter';
+
 let SecondsElapsed = 0;
 
 function updateCounter(){
